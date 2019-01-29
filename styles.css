@@ -79,18 +79,17 @@ table tr:nth-child(even){
 
   #list1{
     background-image: url(images/good.png);
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 
   #list2{
     background-image: url(images/bad.png);
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 
   #list3{
     background-image: url(images/cat.png);
+  }
+
+  #list1, #list2, #list3{
     background-repeat: no-repeat;
     background-size: contain;
   }
