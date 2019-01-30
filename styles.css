@@ -6,11 +6,39 @@ body{
     background-size: cover; */
     max-width: 90%;
     margin: auto;
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: 'Open Sans', sans-serif;
 }
 
 header *{
     background-color: yellow;
+}
+
+h3{
+        display: block;
+}
+
+h2{
+    display: inline-block;
+    block-size: 45%;
+}
+
+h1, h2, h3{
+    font-family: 'Indie Flower', cursive;
+}
+
+ul{
+        display: block;
+}
+
+figure{
+    display: inline;
+    width: 45%;
+    float: right;
+}
+
+img{
+    width: 500px;
 }
 
 blockquote{
@@ -18,7 +46,7 @@ blockquote{
     margin: 80px auto;
     font-size: 160%;
     background-color: lightgrey;
-    border-left: 3px dotted black;
+    border-left: 3px dotted;
     padding-left: 30px;
     font-style: italic;
 }
@@ -45,8 +73,15 @@ a:hover {
     color: black;
 }
 
-.villagers{
+.villagers, .villagers1{
     border-color: #D3B819;
+}
+
+.villagers1{
+    display: inline-block;
+    width: 45%;
+    block-size: 45%;
+    
 }
 
 .farmer{
@@ -67,47 +102,37 @@ a:hover {
 
 table tr:nth-child(odd){ 
     background: #b8d1f3;
-  }
+}
   
 table tr:nth-child(even){
     background: #dae5f4;
-  }
+}
 
-  .first{
+.first-p, .first-p1{
       font-weight: bold;
-  }
+}
 
-  #list1{
+.first-p1{
+    display: block;
+    width: 45%;
+    block-size: 45%;
+}
+
+#list1{
     background-image: url(images/good.png);
-  }
+}
 
-  #list2{
+#list2{
     background-image: url(images/bad.png);
-  }
+}
 
-  #list3{
+#list3{
     background-image: url(images/cat.png);
-  }
+}
 
-  #list1, #list2, #list3{
+#list1, #list2, #list3{
     background-repeat: no-repeat;
     background-size: contain;
-  }
+    padding-left: 20px;
+}
 
-  img{
-      width: 100%;
-  }
-
-  .foto{
-      float: left;
-      width: 50%;
-      margin-right: 100px;
-  }
-
-  .tekst{
-
-  }
-
-  .villagers1{
-      margin-left: 52%;
-  }
