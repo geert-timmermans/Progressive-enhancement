@@ -17,33 +17,35 @@ body{
     text-align: center;
 }
 
+h1{
+    font-size: 29px;
+    margin: 20px auto;
+}
+
 a{
     text-decoration: none;
     position: relative;
     display: block;
-    padding: 13px 13px;
+    padding: 12px 10px;
 }
 
 header{
-    height: 45px;
-    position: fixed;
+    height: 40px;
     width: 100%;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .header1{
     width: 70%;
     display: flex;
-    flex-flow: row nowrap;
 }
 
 .header-logo{
-    position: relative;
-    display: block;
     margin-top: 5px;
     height: 20px;
+    display: flex;
+    align-items: center;
 }   
 
 img{
@@ -53,48 +55,92 @@ img{
 }
 
 .header-menu{
-    height: 100%;;
+    font-size: 13px;
+    height: 100%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
 }
 
 .header2{
-    background-color: #4df3ae;
+    font-size: 13px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .box1{
-    background-color: red;
-    height: 360px;
+    height: 320px;
+    display: grid;
+    grid-template: 
+    'linux-pengiun .'
+    'linux-pengiun .'
+    'linux-pengiun .';
+    grid-template-columns: 35% 40%;
+}
+
+.linux-pengiun{
+    
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 75%;
+    margin: auto;
+    grid-area: linux-pengiun;
+
+}
+
+.box1-logo{
+    background-image: url(images/restdblogo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 75%;
+    margin: 50px auto 0 175px;
+}
+
+.box1-button{
+    background-color: #e99002;
+    width: 275px;
+    height: 76px;
+    margin: 0 auto 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1-button > a{
+    padding: 29px 69px;
+    font-size: 150%;
+}
+
+.button{
+    border: 3px solid #fff;
+    border-radius: 20px;
 }
 
 .box2{
-    background-color: blue;
     height: 70px;
 }
 
 .box3{
-    background-color: cyan;
     height: 360px;
 }
 
 .box4{
-    background-color: yellow;
     height: 70px;
 }
 
 .box5{
-    background-color: whitesmoke;
     height: 290px;
 }
 
 .box6{
-    background-color: grey;
     height: 250px;
 }
 
 footer{
-    background-color: green;
     height: 70px;
 }
 
@@ -110,7 +156,7 @@ a{
     color: #fff;
 }
 
-a:hover{
+.header-menu > li > a:hover{
     background-color: rgb(44, 36, 36);
 }
 
