@@ -6,6 +6,7 @@
     font-family: Arial, Helvetica, sans-serif;
     vertical-align: baseline;
     list-style: none;
+    text-decoration: none;
 }
 
 
@@ -14,36 +15,44 @@
 body{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    color: white;
 }
 
-a{
+h1{
+    font-size: 29px;
+    margin: 70px auto 0 auto;
+}
+
+h2{
+    font-size: 26px;
+    font-weight: 100;
+    margin-top: 15px;
+}
+
+header a{
     text-decoration: none;
     position: relative;
     display: block;
-    padding: 13px 13px;
+    padding: 12px 10px;
 }
 
 header{
-    height: 45px;
-    position: fixed;
+    height: 40px;
     width: 100%;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .header1{
     width: 70%;
     display: flex;
-    flex-flow: row nowrap;
 }
 
 .header-logo{
-    position: relative;
-    display: block;
     margin-top: 5px;
     height: 20px;
+    display: flex;
+    align-items: center;
 }   
 
 img{
@@ -53,48 +62,175 @@ img{
 }
 
 .header-menu{
-    height: 100%;;
+    font-size: 13px;
+    height: 100%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
 }
 
 .header2{
-    background-color: #4df3ae;
+    font-size: 13px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .box1{
-    background-color: red;
-    height: 360px;
+    height: 320px;
+    display: grid;
+    grid-template: 
+    'linux-pengiun .'
+    'linux-pengiun .'
+    'linux-pengiun .';
+    grid-template-columns: 35% 40%;
+}
+
+.linux-pengiun{
+    background-image: url(images/linux-penguin.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 75%;
+    margin: auto;
+    grid-area: linux-pengiun;
+
+}
+
+.box1-logo{
+    background-image: url(images/restdblogo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 50px 130px;
+}
+
+.button > a{
+    font-size: 120%;
+}
+
+.button{
+    background-color: #e99002;
+    width: 200px;
+    height: 50px;
+    margin: auto auto 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #fff;
+    border-radius: 15px;
 }
 
 .box2{
-    background-color: blue;
     height: 70px;
+}
+
+.box2 h2{
+    color: #383A39;
+    text-align: center;
 }
 
 .box3{
-    background-color: cyan;
     height: 360px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.box3 h2{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.box3-1{
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 75px;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+.box3-2{
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 75px;
+    padding-top: 20px;
+}
+
+.box3-3{
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 75px;
+    padding-right: 10px;
+}
+
+.box3-4{
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 75px;
 }
 
 .box4{
-    background-color: yellow;
     height: 70px;
 }
 
+.box4 h2{
+    color: gray;
+    text-align: center;
+}
+
 .box5{
-    background-color: whitesmoke;
     height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box5-1{
+    height: 50%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos{
+    display: flex;
+}
+
+.logo1{
+    margin-left:20px;
+}
+
+.box5-2{
+    height: 50%;
+    display: flex;
+    align-items: center;
 }
 
 .box6{
-    background-color: grey;
+    background-color: green;
+    margin: auto;
     height: 250px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.button2{
+    background-color: #03016B;
+    border: none;
+    height: 75px;
+    margin-bottom: 120px;
+}
+
+.button3{
+    border: none;
+    height: 75px;
+    margin-bottom: 120px;
 }
 
 footer{
-    background-color: green;
     height: 70px;
 }
 
@@ -110,7 +246,11 @@ a{
     color: #fff;
 }
 
-a:hover{
+.header-menu > li > a:hover{
+    background-color: rgb(44, 36, 36);
+}
+
+.header2 > a:hover{
     background-color: rgb(44, 36, 36);
 }
 
