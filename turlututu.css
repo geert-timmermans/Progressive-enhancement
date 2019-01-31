@@ -14,12 +14,18 @@
 body{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    color: white;
 }
 
 h1{
     font-size: 29px;
-    margin: 20px auto;
+    margin: 70px auto 0 auto;
+}
+
+h2{
+    font-size: 26px;
+    font-weight: 100;
+    margin-top: 15px;
 }
 
 a{
@@ -80,8 +86,7 @@ img{
 }
 
 .linux-pengiun{
-    
-    
+    background-image: url(images/linux-penguin.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 50%;
@@ -95,24 +100,23 @@ img{
     background-image: url(images/restdblogo.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 50%;
-    height: 75%;
-    margin: 50px auto 0 175px;
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 50px 130px;
 }
 
 .box1-button{
     background-color: #e99002;
-    width: 275px;
-    height: 76px;
-    margin: 0 auto 50px auto;
+    width: 200px;
+    height: 50px;
+    margin: auto auto 40px auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .box1-button > a{
-    padding: 29px 69px;
-    font-size: 150%;
+    font-size: 120%;
 }
 
 .button{
@@ -124,12 +128,57 @@ img{
     height: 70px;
 }
 
+.box2 h2{
+    color: #383A39;
+    text-align: center;
+}
+
 .box3{
     height: 360px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.box3 h2{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.box3-1{
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 75px;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+.box3-2{
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 75px;
+    padding-top: 20px;
+}
+
+.box3-3{
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 75px;
+    padding-right: 10px;
+}
+
+.box3-4{
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 75px;
 }
 
 .box4{
     height: 70px;
+}
+
+.box4 h2{
+    color: gray;
+    text-align: center;
 }
 
 .box5{
@@ -157,6 +206,10 @@ a{
 }
 
 .header-menu > li > a:hover{
+    background-color: rgb(44, 36, 36);
+}
+
+.header2 > a:hover{
     background-color: rgb(44, 36, 36);
 }
 
